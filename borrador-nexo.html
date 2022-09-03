@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Proyecto</title>
+    <style>
+            .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 100px;
+            height: 0.5px;
+            margin-top: 25px;
+            }  
+            .button-right {
+                display: grid;
+                gap: 100px;
+                height: 0.5px;
+                margin-top: 25px;
+            }
+
+           header{
+                display: flex;
+                align-content: center;
+                justify-content: space-around;
+            }
+            body, html {  
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+            display: flex;
+            flex-direction: column;
+            }
+
+            .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("oficina.png");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            }
+
+            .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            }
+
+            .hero-text button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+            }
+
+            .hero-text button:hover {
+            background-color: #555;
+            color: white;
+            }
+
+            main {
+            flex:auto;
+            }
+            
+            .box-container{ 
+            width: 100%; 
+            }
+
+            .bg-celeste{
+            background-color: dodgerblue;
+            }
+
+            .bg-blanco{
+            background-color: white;
+            }
+
+            .box-services{
+            display: flex;
+            row-gap: 10px;
+            padding:5%;
+            }
+
+            .box-services-img{
+            flex: 1;
+            }
+
+            .box-services-img > img{
+            width: 100%;
+            min-height: 250px;
+            }
+           
+            .box-services-text{
+            flex: 1;
+            color: white;
+            font-size: 20px;
+            }
+
+            .box-solution{
+            display: flex;
+            row-gap: 10px;
+            padding: 0% 5% 5% 5%;
+            justify-content: space-between;
+            }
+            
+            .box-solution-text{
+            flex: 1;
+            color: white;
+            font-size: 20px;
+            }
+
+            .box-solution-img{
+            flex: 1;
+            }
+
+            .box-solution-img > img{
+            width: 100%;
+            min-height: 250px;
+            }
+
+            .box-oportunities-tiles{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20%;
+            }
+
+            .box-info{
+            align-items: center;
+            flex: 1;
+            border-radius: 10%;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            }
+
+
+            .box-info > span {
+            text-align: right;  
+            }
+
+            .icon {
+            position: relative;
+            left: 15px;
+            top: 50px;
+            width: 80px;
+            }
+
+            .more {
+            position: relative;
+            left: 115px;
+            bottom: 20px;
+            width: 20px;
+            align-items: auto;
+            }
+
+            .red{
+            background-color: #DC3545;
+            }
+
+            .blue{
+            background-color: #17A2B8;
+            }
+
+            .green{
+            background-color: #28A745;
+            }
+
+            .yellow{
+            background-color: #FF9C07;
+            }
+
+            .news {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+
+            .img-noticia {
+            display: flex;
+            width: 200px;
+            height: 250px;
+            align-items: center;
+            justify-content: space-between;
+            }
+
+            .contact {
+            border: 5%;
+            padding: 5%;
+            margin: 5px;
+            width: 500px;
+            height: 200px;
+            }
+
+            .box-contact{
+            flex: 1;
+            }
+
+            .box-form{
+            flex: 1;
+            }
+            
+            #contact{
+            display: flex;
+            }
+
+           /* .animales {
+            width: auto;
+            max-height: 20%;
+            column-gap: 20px;
+            object-fit: contain;
+            } 
+
+            .uruguay{
+            width: auto;
+            max-height: 20%;
+            column-gap: 20px;
+            object-fit: contain;
+            }
+
+            .voluntariado{
+            width: auto;
+            max-height: 20%;
+            column-gap: 20px;
+            object-fit: contain;
+            }
+
+            .techo-uruguay{
+            width: auto;
+            max-height: 20%;
+            column-gap: 20px;
+            object-fit: contain;
+            } */
+        
+
+</style>   
+</head>
+
+    <body>
+        <header>
+            <div id="logo">
+        <img src="./logo.png">
+    </div>
+        <div class="grid-container">
+            <button>nosotros</button>
+            <button>noticias</button>
+            <button>ayuda</button>
+        </div>    
+    <div class="button-right">
+        <button>Ingresar</button>
+    </div>
+</header>
+<main>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h3>¡Actúa para cambiar el mundo!</h3>
+            <p>Fomentamos el vínculo entre empresas y organizaciones civiles para generar un
+                impacto positivo en la sociedad.
+                Descubrí diferentes maneras de involucrar tu organización con la sociedad.
+            </p>
+        </div>
+    </div>
+    <section class="nosotros">
+        <div class="box-container bg-celeste">
+            <div class="box-services">
+                <div class="box-services-img">
+                    <img src="oficina.png">
+                </div>
+                <div class="box-services-text">
+                    <h5>Soluciones para empresas</h5>
+                        <p>Generamos un medio para que las empresas se involucren
+                        en actividades de responsabilidad social.
+                        ¡Crea un grupo de voluntarios en tu organización y se
+                        parte del cambio!
+                        </p>
+                </div>
+            </div>
+            <div class="box-solution">
+                <div class="box-solution-text">
+                    <h5>Soluciones para organizaciones</h5>
+                        <p>
+                        Apoyamos a las organizaciones sociales para que alcancen
+                        sus objetivos. Ponemos a su disposición una comunidad de voluntarios
+                        dispuestos a apoyarlos en sus necesidades.
+                        Equipos de voluntarios por empresas dispuestos a potenciar tu
+                        impacto en la sociedad.
+                        </p>
+                </div>
+                <div class="box-solution-img">
+                    <img src="voluntariado.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="oportunities">
+        <div class="box-container bg-blanco">
+            <div class="box-oportunities-text"> 
+                <h6>Encuentra las mejores oportunidades</h6>
+                <p>La plataforma cuenta con gran variedad de proyectos locales(sociales, educativos y medioambientales), donde
+                    encontraras el que mejor se adapte a la experiencia que estas buscando
+                    Te ayudamos en la coordinacion con la organización de forma simple y rápida.
+                </p>
+            </div>
+            <div class="box-oportunities-tiles">
+                <div class="box-info red">
+                    <img src="icono-mano.png" class="icon"><img src="icono-mas.png" class="more"><span>Ser voluntario</span></div>
+                <div class="box-info yellow">
+                    <img src="icono-mano-corazon.png" class="icon"><img src="icono-mas.png" class="more"><span>Donar</span></div>
+                <div class="box-info green">
+                    <img src="icono-reciclar.png" class="icon"><img src="icono-mas.png" class="more"><span>Reciclar</span></div>
+                <div class="box-info blue">
+                    <img src="icono-maletin.png" class="icon"><img src="icono-mas.png" class="more"><span>Llamados<br>laborales</span></div>
+            </div>   
+        </div> 
+    </section>
+
+    <section class="noticias">
+        <div class="box-container bg-blanco">
+            <h1>Noticias</h1>
+            <h6>Ver todos</h6>
+                <div class="news">
+                <div class="animales">
+                    <p>Animales</p> 
+                    <img src="animals.jpg" class="img-noticia">
+                    <img src="icono-calendario.png"><p>10/08/2021</p>
+                    <img src="icono-reloj.png"><p>4 min</p>
+                    <h3>Fundappas abre nuevo centro</h3>
+                            <p> El nuevo centro estará ubicado dentro
+                                del predio municipal Parque Rivera.
+                                La inauguración de centro contara
+                                con la presencia de la intendenta Carolina... </p>
+                    <img src="icono-flecha.png"><p>Ver más</p>           
+                </div>
+
+                <div class="uruguay">
+                    <p>Uruguay</p>
+                    <img src="animals.jpg" class="img-noticia">
+                    <img src="icono-calendario.png"><p>10/08/2021</p>
+                    <img src="icono-reloj.png"><p>4 min</p>
+                    <h3>DIRECT TV y TECHO inauguraron un
+                        espacio deportivo</h3>
+                    <p> Los vecinos del lugar recibieron con
+                        alegría la concreción de este proyecto, 
+                        que busca promover la socialización y la
+                        actividad física... </p>
+                    <img src="icono-flecha.png"><p>Ver más</p>    
+                </div>
+
+                <div class="voluntariado">
+                    <p>Voluntariado</p>
+                    <img src="animals.jpg" class="img-noticia">
+                    <img src="icono-calendario.png"><p>10/08/2021</p>
+                    <img src="icono-reloj.png"><p>3 min</p>
+                    <h3>Jornada de voluntarios</h3>
+                            <p> Se realizó una nueva jornada de voluntarios
+                                Remar. El encuentro tuvo parte en el departamento
+                                de Montevideo y contó..
+                            </p>
+                    <img src="icono-flecha.png"><p>Ver más</p>
+                </div>
+            
+                <div class="techo-uruguay">
+                    <p>Uruguay</p>
+                    <img src="animals.jpg" class="img-noticia">
+                    <img src="icono-calendario.png"><p>10/08/2021</p>
+                    <img src="icono-reloj.png"><p>5 min</p>
+                    <h3>Lanzamiento del plan Tu Techo</h3>
+                                <p> Techo Uruguay informó su nuevo plan
+                                    de acción para el segundo semestre del
+                                    año.
+                                </p>
+                    <img src="icono-flecha.png"><p>Ver más</p>      
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <section id ="contact">
+        <div class="box-contact">
+            <img src="./laptop-escritorio.jpg" class="contact">
+        </div>
+ 
+        <div class="box-form">
+            <h2><b>Contacto</b></h2>
+            <form>
+                    <label>Texto Dato</label>
+                    <input type="text" placeholder="Dato a completar"><br>
+                    <label>Texto Dato</label>
+                    <input type="text" placeholder="Dato a completar"><br>
+                    <label>Mensaje</label>
+                    <textarea placeholder="Dato a completar"></textarea><br>
+                <button>Enviar</button>
+            </form>
+        </div> 
+    </section>
+   
+    <footer>
+        <div>
+            <img src="./logo-blanco.png">
+        </div>
+        <div>
+            <ul>
+                <li>Nosotros</li>
+                <li>Noticias</li>
+                <li>Contactos</li>
+                <li>Términos y Condiciones</li>
+            </ul>
+        </div>
+        <div>
+            <p>Seguinos!</p>
+            <div>Logos Redes</div>
+        </div>
+        <P>Copyright 2021 All rights reserved</P>
+    </footer>
+
+</main>
+
+
+</body>
+</html>
+
